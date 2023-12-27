@@ -15,7 +15,7 @@
 .style-switcher.open {
     transform: translateX(0); 
  }
-     
+    translateX 
 .style-switcher .s-icon
 {
     position: absolute;
