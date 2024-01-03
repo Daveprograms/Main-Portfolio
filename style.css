@@ -363,26 +363,6 @@ h3.my-profession {
 
   position: relative;
 }
-/* .home-img::after {
-  content: "";
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  border-bottom: 10px solid var(--skin-color);
-  border-right: 10px solid var(--skin-color);
-  right: 20px;
-  bottom: -40px;
-}
-.home-img::before {
-  content: "";
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  border-top: 10px solid var(--skin-color);
-  border-left: 10px solid var(--skin-color);
-  left: 20px;
-  top: -40px;
-} */
 
 .home-img img {
   margin: auto;
@@ -774,6 +754,31 @@ h3.my-profession {
     margin-left: 0;
   }
 }
+
+
+
+.btn {
+  
+  background-color:red; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+  
+  background-color: #0056b3; 
+}
+
+.btn:active {
+  
+  background-color: #004085; 
+  transform: translateY(2px); 
+}
+
 
 @media(max-width : 991px){
   .contact .contact-form .col-6,
