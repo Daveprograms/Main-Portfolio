@@ -1,3 +1,28 @@
+
+const styleSwitcherOpenIcon = document.querySelector(".style-switcher-open-icon");
+const styleSwitcherCloseIcon = document.querySelector(".style-switcher-close-icon");
+const styleSwitcher = document.querySelector(".style-switcher");
+
+
+styleSwitcherOpenIcon.addEventListener("click", () => {
+    styleSwitcher.classList.add("open");
+});
+
+
+styleSwitcherCloseIcon.addEventListener("click", () => {
+    styleSwitcher.classList.remove("open");
+});
+
+window.addEventListener("scroll", () => {
+    if (styleSwitcher.classList.contains("open")) {
+        styleSwitcher.classList.remove("open");
+    }
+});
+
+
+
+
+
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggle.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.toggle("open");
@@ -9,7 +34,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// Theme color
+
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color) {
     alternateStyles.forEach((style) => {
@@ -21,7 +46,7 @@ function setActiveStyle(color) {
     });
 }
 
-// switch dark more and light mode 
+
 const dayNight = document.querySelector(".day-night");
 
 dayNight.addEventListener("click", () => {
@@ -53,3 +78,14 @@ function setActiveStyle(color) {
     });
 }
 
+document.querySelector(".style-switcher-open-icon").addEventListener("click", function() {
+    var styleSwitcher = document.querySelector(".style-switcher");
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      
+      styleSwitcher.style.width = "20%"; 
+    } else {
+    
+      styleSwitcher.classList.add("open");
+    }
+  });
+  

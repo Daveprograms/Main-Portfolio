@@ -13,6 +13,43 @@
    
 }
 
+.style-switcher-open-icon {
+    position: fixed;
+    top: 60px; 
+    right: 0;
+    cursor: pointer;
+    z-index: 102; 
+    
+  }
+  
+ 
+  .style-switcher-close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+  }
+  
+  
+  .style-switcher {
+    transform: translateX(100%);
+    
+  }
+  
+  
+  .style-switcher.open {
+    transform: translateX(0);
+  }
+  
+  
+.style-switcher-open-icon .fa-bars {
+    font-size: 30px; 
+    
+    line-height: 30px;
+}
+
+
 .style-switcher.open {
     transform: translateX(0); 
     
@@ -95,3 +132,7 @@
     background: #f021b2;
 }
 
+
+.style-switcher-open-icon .fa-bars {
+    font-size: 3vw; 
+}
