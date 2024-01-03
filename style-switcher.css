@@ -9,11 +9,13 @@
     z-index: 101;
     border-radius: 5px;
     transition: all 0.3s ease;
+    cursor: pointer;
    
 }
 
 .style-switcher.open {
     transform: translateX(0); 
+    
  }
     translateX 
 .style-switcher .s-icon
@@ -31,6 +33,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius:50%;
+  
 }
 .style-switcher .s-icon i
 {
@@ -50,6 +53,9 @@
     color: var(--text-black--700);
     font-size: 16px;
     text-transform: capitalize;
+    
+
+      
 
 }
 .style-switcher .colors
@@ -57,6 +63,7 @@
     display: flex;
     flex-wrap:wrap ;
     justify-content: space-between;
+    
 }
 
 .style-switcher .colors span
