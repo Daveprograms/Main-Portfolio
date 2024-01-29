@@ -9,42 +9,39 @@
 }
 
 :root {
-    --bg-color: #ffffff; 
-    --text-color: #000000; 
-    
+  --bg-color: #ffffff;
+  --text-color: #000000;
 }
-
 
 body.dark {
-    --bg-color: var(--bg-black-100); 
-    --text-color: var(--text-black-900); 
-    
+  --bg-color: var(--bg-black-100);
+  --text-color: var(--text-black-900);
 }
-
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-
-header, footer, nav, .sidebar, .card {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+header,
+footer,
+nav,
+.sidebar,
+.card {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
-
 
 body.dark {
-    --bg-black-900: #151515;
-    --bg-black-100: #222222;
-    --bg-black-50: #393939;
-    --text-black-900: #ffffff;
-    --text-black-700: #e9e9e9;
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
 }
 
-
 .card {
-    background-color: var(--bg-black-50);
+  background-color: var(--bg-black-50);
 }
 
 body {
@@ -83,27 +80,21 @@ ul {
   overflow-x: hidden;
   transition: all 0.3s ease;
 }
-.section.back-section
-{
+.section.back-section {
   z-index: 1;
 }
-.section.active
-{
-z-index: 2;
-opacity: 1;
-animation: slideSection 1s ease;
+.section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
 }
-@keyframes slideSection
-{
-  0%
-  {
+@keyframes slideSection {
+  0% {
     transform: translateX(100%);
   }
-    100%
-    {
-      transform: translateX(0%);
-    }
-  
+  100% {
+    transform: translateX(0%);
+  }
 }
 .hidden {
   display: none !important;
@@ -260,7 +251,7 @@ animation: slideSection 1s ease;
   display: inline-block;
   position: relative;
 }
-.aside .nav-toggler.open span{
+.aside .nav-toggler.open span {
   background-color: transparent;
 }
 .aside .nav-toggler span::before {
@@ -272,8 +263,7 @@ animation: slideSection 1s ease;
   top: -6px;
   left: 0;
 }
-.aside .nav-toggler.open span::before
-{
+.aside .nav-toggler.open span::before {
   transform: rotate(45deg);
   top: 0;
 }
@@ -286,8 +276,7 @@ animation: slideSection 1s ease;
   top: 6px;
   left: 0;
 }
-.aside .nav-toggler.open span::after
-{
+.aside .nav-toggler.open span::after {
   transform: rotate(-45deg);
   top: 0;
 }
@@ -422,7 +411,6 @@ h3.my-profession {
   margin-top: 30px;
 }
 .about .about-content .personal-info .buttons .btn {
-  
   margin-top: 10px;
 }
 
@@ -685,6 +673,21 @@ h3.my-profession {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+.Sign-up {
+  position: fixed;
+  bottom: 100px;
+  right: 400px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .Sign-up {
+    right: 20px;
+  }
+}
+
 .contact .contact-form .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
@@ -719,68 +722,64 @@ h3.my-profession {
   padding: 0 50px;
 }
 @media (max-width: 1199px) {
-  .section .container
-  {
+  .section .container {
     padding-top: 70px;
   }
   .aside {
     left: -270px;
   }
-  .aside.open
-  {
+  .aside.open {
     left: 0;
   }
-  .aside .nav-toggler
-  {
+  .aside .nav-toggler {
     display: flex;
     left: 30px;
-
   }
-  .aside .nav-toggler.open{
+  .aside .nav-toggler.open {
     left: 300px;
   }
-  
-  .section{
+
+  .section {
     left: 0;
   }
-  .section.open{
+  .section.open {
     left: 270px;
   }
 
-
- 
   .about .about-content .personal-info .info-item p span {
     display: block;
     margin-left: 0;
   }
 }
 
+.Sign-up {
+  margin: 10px;
+  display: flex;
 
+  height: flex;
+  border-radius: 10px;
+}
 
 .btn {
-  
-  background-color:red; 
+  background-color: red;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  
-  background-color: #0056b3; 
+  background-color: #0056b3;
 }
 
 .btn:active {
-  
-  background-color: #004085; 
-  transform: translateY(2px); 
+  background-color: #004085;
+  transform: translateY(2px);
 }
 
-
-@media(max-width : 991px){
+@media (max-width: 991px) {
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portfolio .portfolio-item,
@@ -788,9 +787,8 @@ h3.my-profession {
   .about .about-content .experience,
   .about .about-content .education,
   .about .about-content .skills,
-  .about .about-content .personal-info
-  {
+  .about .about-content .personal-info {
     flex: 0 0 100%;
-      max-width: 100%;
+    max-width: 100%;
   }
 }
